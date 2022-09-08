@@ -349,7 +349,7 @@ public class BackgroundModeExt extends CordovaPlugin {
 
         wakeLock = pm.newWakeLock(level, "backgroundmode:wakelock");
         wakeLock.setReferenceCounted(false);
-        wakeLock.acquire(1000);
+        wakeLock.acquire(15000);
     }
 
     /**
